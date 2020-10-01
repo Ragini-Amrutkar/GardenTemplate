@@ -1,0 +1,242 @@
+<html>
+<head>
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+<script>
+function myFun()
+{
+var user=document.getElementById("UN").value;
+var mobile=document.getElementById("MN").value;
+var message=document.getElementById("msg").value;
+var address=document.getElementById("add").value;
+
+if(user=="")
+{
+document.getElementById("user").innerHTML="**Plz fill UserName**";
+return false;
+}
+if(user.length<3)
+{
+document.getElementById("user").innerHTML="**UserName must be 3 char**";
+return false;
+}
+if(user.length>20)
+{
+document.getElementById("user").innerHTML="**UserName should be less than 20 char**";
+return false;
+}
+if(address=="")
+{
+document.getElementById("address").innerHTML="**Plz fill Address**";
+return false;
+}
+if(mobile=="")
+{
+document.getElementById("mbl").innerHTML="**Plz fill MobileNo**";
+return false;
+}
+if(isNaN(mobile))
+{
+document.getElementById("mbl").innerHTML="**Only Numbers Allowed**";
+return false;
+}
+if(mobile.length!=10)
+{
+document.getElementById("mbl").innerHTML="**MobileNo must be 10 char**";
+return false;
+}
+if(message=="")
+{
+document.getElementById("mesg").innerHTML="**Plz Enter the Message**";
+return false;
+}
+}
+</script>
+
+
+
+<div class="container"><!--bg-->
+
+
+<img src="D:\RAGINI\Web Developement\Garden Template\Images\logo.png" id="img">
+
+
+<nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+
+
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link" href="home.html" style="color:white">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="about.html" style="color:white">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="plants.html" style="color:white">Plants</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="gardens.html" style="color:white">Gardens</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="news.html" style="color:white">News</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="contact.html" style="color:green;background-color:#c6ffb3">Contact</a>
+  </li>
+ 
+</ul>
+
+</nav>
+
+
+
+
+
+
+<pre style="margin-left:2%">
+<h2 style="color:grey"><b>CONTACT</b></h2>
+<span style="color:green">This website template has been designed by <a href="#">Free Website Templates</a> for you, for free. You can replace all this text with your own 
+text. Want an easier solution for a Free Website? Head straight to Wix and immediately start customizing your website! Wix is an 
+online website builder with a simple drag & drop interface, meaning you do the work online and instantly publish to the web.
+ Nothing to download, nothing to upload.</span>
+</pre>
+
+
+
+<form onsubmit="return myFun()" style="margin-left:5%">
+<b>UserName</b>
+<br>
+<input type="text" id="UN" style="width:65%">
+<span id="user" style="color:red"></span>
+<br><br>
+<b>Address</b>
+<br>
+<textarea id="add" style="width:65%"></textarea>
+<span id="address" style="color:red"></span>
+<br><br>
+<b>Mobile Number</b>
+<br>
+<input type="text" id="MN" style="width:65%"> 
+
+<span id="mbl" style="color:red"></span>
+<br><br>
+<b>Message</b><br>
+<textarea id="msg" style="width:65%"></textarea>
+<span id="mesg" style="color:red"></span>
+<br><br>
+<input type="submit" value="Submit" style="color:white;background-color:green">
+
+
+</form>
+
+
+
+
+
+<div class="BF"><!--before footer-->
+
+<div class="card" style="width:25%;float:left">
+  <div class="card-body">
+    <h5 class="card-title">PLACE HOLDER</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is just a place holder.</h6>
+     <h6 class="card-subtitle mb-2 text-muted">This is just a place holder.</h6>
+	<h6 class="card-subtitle mb-2 text-muted">This is just a place holder.</h6>
+  </div>
+  </div>
+  
+  
+  <div class="card" style="width:25%;float:left">
+  <div class="card-body">
+    <h5 class="card-title">PLACE HOLDER</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is just a place holder.</h6>
+     <h6 class="card-subtitle mb-2 text-muted">This is just a place holder.</h6>
+	<h6 class="card-subtitle mb-2 text-muted">This is just a place holder.</h6>
+  </div>
+</div>
+  
+  
+  
+  <div class="card" style="width:25%;float:left">
+  <div class="card-body">
+    <h5 class="card-title">PLACE HOLDER</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is just a place holder.</h6>
+     <h6 class="card-subtitle mb-2 text-muted">This is just a place holder.</h6>
+	<h6 class="card-subtitle mb-2 text-muted">This is just a place holder.</h6>
+
+  </div>
+</div>
+
+
+
+
+<div class="card" style="width:25%;">
+  <div class="card-body">
+    <h5 class="card-title">CONNECT</h5>
+    <a href="https://accounts.google.com/"><h6 class="card-subtitle mb-2 text-muted">E-Mail.</h6></a>
+<a href="https://www.facebook.com/"><h6 class="card-subtitle mb-2 text-muted">Facebook.</h6></a>
+<a href="https://accounts.google.com/"><h6 class="card-subtitle mb-2 text-muted">E-Mail.</h6></a>
+     
+  </div>
+</div>
+
+  
+  
+  
+  
+  
+</div><!--before footer-->
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+
+<p>Garden Walkthrough © 2023 | All Rights Reserved</p>
+
+
+
+
+
+
+
+</div><!--footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--bg-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
